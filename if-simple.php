@@ -9,13 +9,13 @@ $animal = "Chat";
 // La condition doit répondre à la question:
 echo "1.Est-ce un chat : ";
 
-if($animal == "Chat") {
-  //condition vraie
-  echo "Oui";
+if($animal === "Chat") {
+    //condition vraie
+    echo "Oui";
 }
 else {
-  //condition fausse
-  echo "Non";
+    //condition fausse
+    echo "Non";
 }
 echo "<br><br>";
 
@@ -28,14 +28,24 @@ $animal = "Chien";
 echo "2.Est-ce un chat : ";
 
 // TODO mettre votre code ici
-
+if ($animal === "Chat") {
+    echo "Oui";
+}
+elseif ($animal === "Chien") {
+    echo "Non";
+}
 echo "<br><br>";
 
 //----------------------------------------
 // Écrire la condition qui affiche "Oui" quand $chat vaut true et affiche "Non" dans le cas contraire ###//
 $chat = true;
 echo "3.Est-ce un chat : ";
-
+if ($chat === true) {
+    echo "Oui";
+}
+else {
+    echo "Non";
+}
 // TODO mettre votre code ici
 
 echo "<br><br>";
